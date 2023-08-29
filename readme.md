@@ -3,7 +3,17 @@
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/spring-projects/spring-petclinic) [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=7517918)
 
 
+## CRaC Support
 
+This fork adds support for [JVM Checkoint / Restore](https://docs.spring.io/spring-framework/reference/6.1/integration/checkpoint-restore.html).
+
+
+Kudos to [Sébastien Deleuze](https://github.com/sdeleuze) and his pioneering work, see [spring-boot-crac-demo](https://github.com/sdeleuze/spring-boot-crac-demo/tree/main) 
+and [spring-checkpoint-restore-smoke-tests](https://github.com/spring-projects/spring-checkpoint-restore-smoke-tests/tree/main) for details.
+
+
+Use `./checkpoint.sh` to create a container with a CRaC snapshot and `./restore.sh` to load it.
+Using snapshots, Petclinic starts in 2~ seconds on my 2015 MBP.
 
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
